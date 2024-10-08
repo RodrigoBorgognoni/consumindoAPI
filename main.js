@@ -1,4 +1,5 @@
 const containerVideos = document.querySelector('.videos__container');
+const barraPesquisa = document.querySelector('.pesquisar__input');
 
 async function searchVideos() {
     try {
@@ -25,5 +26,21 @@ async function searchVideos() {
         containerVideos.innerHTML = `${e}`
     }
 }
+
+barraPesquisa.addEventListener('input', filtraPesquisa => {
+    const videos = document.querySelectorAll('.videos__item');
+    if (barraPesquisa.value != '') {
+        for (let video of videos) {
+            let titulo = video.querySelector('.titulo-video').textContent.toLowerCase();
+            let valorFiltro = barraPesquisa.value.toLowerCase();
+
+            if (!titulo.includes(valorFiltro)) {
+                video.style.display = "none";
+            } else video.style.display = "block";
+        }
+    } else {
+        videos.style.display = "block";
+    }
+})
 
 searchVideos();
