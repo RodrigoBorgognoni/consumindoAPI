@@ -42,6 +42,11 @@ barraPesquisa.addEventListener('input', () => {
 
     videos.forEach((video) => {
         const titulo = video.querySelector('.titulo-video').textContent.toLowerCase();
+        /* 
+        se as condição1 e condição2 forem verdadeiras: valor1
+        se cond1 true e cond2 false: valor 2
+        se cond1 false: valor3
+         */
         video.style.display = valorFiltro ? titulo.includes(valorFiltro) ? 'block' : 'none' : 'block';
     });
 });
