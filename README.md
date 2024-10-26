@@ -14,7 +14,9 @@ Para instalar o JSON Server globalmente, você só precisa digitar o seguinte co
 <p>Caso você utiliza o Windows, é necessário que você siga os seguintes passos para conseguir executar o JSON Server:
 <br>
 Abra o PowerShell como administrador. Para fazer isso, pesquise "PowerShell" no menu Iniciar, clique com o botão direito do mouse sobre "Windows PowerShell" (ou "Windows Terminal") e selecione "Executar como administrador".</p>
-<b>Set-ExecutionPolicy RemoteSigned</b>
+<b>Set-ExecutionPolicy RemoteSigned</b><br><br>
+<p>Para reverter a política de execução de scripts para o valor original:</p>
+<b>Set-ExecutionPolicy Restricted</b>
 
 
 ## Explicando Operador Ternário com mais de uma condição:
