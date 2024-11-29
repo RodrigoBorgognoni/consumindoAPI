@@ -23,6 +23,6 @@ Abra o PowerShell como administrador. Para fazer isso, pesquise "PowerShell" no 
 
 cond1 ? cond2 ? valor1 : valor2 : valor3
 
-se cond1 e cond2 forem true: valor1
-se cond1 true e cond2 false: valor 2
+se cond1 e cond2 forem true: valor1<br>
+se cond1 true e cond2 false: valor 2<br>
 se cond1 false: valor3
